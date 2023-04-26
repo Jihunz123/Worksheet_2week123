@@ -1,8 +1,8 @@
 phone_book = {"John": "123-4567", "Jane":"234-5678", "Max":"345-6789"}
 
 def search():
+    name = yield
     while True:
-        name = yield
         if name in phone_book:
             phone_number = phone_book[name]
         else:
